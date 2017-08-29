@@ -3,7 +3,7 @@ It's sample use like JQuery.
 You just need add a line 'XmlOperV2.LoadHandle x = ((o) => { return XmlOperV2.load(o); });' in your own class.
 and now you can use it.
 
-eg:
+eg:<br /> 
 var xmlfile1 = x("filepath....");
 xmlfile1.Find("//NodeName").Text("abc");    //change Node Text
 
