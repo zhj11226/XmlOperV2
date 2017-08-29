@@ -36,30 +36,28 @@ x("&lt;root&gt;&lt;item&gt;张静&lt;/item&gt;&lt;item&gt;张桢炫&lt;/item&gt;
 
 x("&lt;root&gt;&lt;item&gt;张青&lt;/item&gt;&lt;item&gt;张桢炫&lt;/item&gt;&lt;/root&gt;").Find("//item").Eq(0).Text("张静");<br>
 
-All method:&lt;br&gt;
-xmlOperObject.Each();   //loop xmlOperObject[];&lt;br&gt;
-xmlOperObject.Text();  //get text;&lt;br&gt;
-xmlOperObject.Text("abc"); //set text;&lt;br&gt;
-xmlOperObject.Xml();   //get innerXML;&lt;br&gt;
-xmlOperObject.Xml("&lt;a&gt;abc&lt;/a&gt;");   //set innerXML;&lt;br&gt;
-xmlOperObject.CDATA("&lt;a&gt;abc&lt;/a&gt;");  //set as CDATA; like &lt;root&gt;&lt;![CDATA[&lt;a&gt;abc&lt;/a&gt;]]&gt;&gt;&lt;/root&gt;&lt;br&gt;
-xmlOperObject.inerertBefore(existsXmlOperObject);&lt;br&gt;
-xmlOperObject.InsertAfter(existsXmlOperObject);&lt;br&gt;
-xmlOperObject.Append(newXmlOperObject);&lt;br&gt;
-xmlOperObject.AppendTo(newXmlOperObject);&lt;br&gt;
-xmlOperObject.Replace(anotherXmlOperObject);  &lt;br&gt;
-xmlOperObject.Clone();&lt;br&gt;
-xmlOperObject.Remove();&lt;br&gt;
-xmlOperObject.Childrens();&lt;br&gt;
-xmlOperObject.RemoveAttr("attrName");&lt;br&gt;
-xmlOperObject.Attr("attrName");  //get attr;&lt;br&gt;
-xmlOperObject.Attr("attrName", value);  //set attr;&lt;br&gt;
-xmlOperObject.Parent();&lt;br&gt;
-xmlOperObject.First();&lt;br&gt;
-xmlOperObject.Last();&lt;br&gt;
-xmlOperObject.Skip(3);&lt;br&gt;
-xmlOperObject.Between(2,5);&lt;br&gt;
-xmlOperObject.Top(3);&lt;br&gt;
+All method:<br />
+xmlOperObject.Each();   //loop xmlOperObject[];<br />
+xmlOperObject.Text();  //get text;<br />
+xmlOperObject.Text("abc"); //set text;<br />
+xmlOperObject.Xml();   //get innerXML;<br />
+xmlOperObject.Xml("&lt;a&gt;abc&lt;/a&gt;");   //set innerXML;<br />
+xmlOperObject.CDATA("&lt;a&gt;abc&lt;/a&gt;");  //set as CDATA; like &lt;root&gt;&lt;![CDATA[&lt;a&gt;abc&lt;/a&gt;]]&gt;&gt;&lt;/root&gt;<br />
+xmlOperObject.inerertBefore(existsXmlOperObject);<br />
+xmlOperObject.InsertAfter(existsXmlOperObject);<br />
+xmlOperObject.Append(newXmlOperObject);<br />
+xmlOperObject.AppendTo(newXmlOperObject);<br />
+xmlOperObject.Replace(anotherXmlOperObject);  <br />
+xmlOperObject.Clone();<br />
+xmlOperObject.Remove();<br />
+xmlOperObject.Childrens();<br />
+xmlOperObject.RemoveAttr("attrName");<br />
+xmlOperObject.Attr("attrName");  //get attr;<br />
+xmlOperObject.Attr("attrName", value);  //set attr;<br />
+xmlOperObject.Parent();<br />
+xmlOperObject.First();<br />
+xmlOperObject.Last();<br />
+xmlOperObject.Skip(3);<br />
+xmlOperObject.Between(2,5);<br />
+xmlOperObject.Top(3);<br />
 xmlOperObject.Save(filepath); //Save outerXML to file;
-
-
