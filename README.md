@@ -29,7 +29,7 @@ xmlfile1.Find("//NodeName").CDATA("&lt;test content&gt;&lt;&gt;");  //set Node C
   
   
 Some advanced method:<br>
-x("&lt;root&gt;&lt;item&gt;张静&lt;/item&gt;&lt;item&gt;张桢炫&lt;/item&gt;&lt;/root&gt;").Find("//item").Each(delegate(o) {
-  Console.WriteLine(o.Text());
-  return true;
-});
+x("&lt;root&gt;&lt;item&gt;张静&lt;/item&gt;&lt;item&gt;张桢炫&lt;/item&gt;&lt;/root&gt;").Find("//item").Each(delegate(o) {<br>
+  Console.WriteLine(o.Text());<br>
+  return true;<br>
+});<br>
