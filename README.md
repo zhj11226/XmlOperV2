@@ -13,7 +13,7 @@ var result1 = xmlfile1.Find("//NodeName").Text(); //get Node Text
 
 var result2 = xmlfile1.Find("//NodeName").Xml();  //get Node Xml
 
-xmlfile1.Find("//NodeName").CDATA("<test content><>");  //set Node CDATA Value
+xmlfile1.Find("//NodeName").CDATA("&lt;test content&gt;&lt;&gt;");  //set Node CDATA Value
   
   var rootNode = x("root");   //Make a <root></root> Node
   
