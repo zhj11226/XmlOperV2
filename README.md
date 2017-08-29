@@ -34,4 +34,32 @@ x("&lt;root&gt;&lt;item&gt;张静&lt;/item&gt;&lt;item&gt;张桢炫&lt;/item&gt;
   return true;<br>
 });<br>
 
-x("&lt;root&gt;&lt;item&gt;张青&lt;/item&gt;&lt;item&gt;张桢炫&lt;/item&gt;&lt;/root&gt;").Find("//item").Eq(0).Text("张静");
+x("&lt;root&gt;&lt;item&gt;张青&lt;/item&gt;&lt;item&gt;张桢炫&lt;/item&gt;&lt;/root&gt;").Find("//item").Eq(0).Text("张静");<br>
+
+All method:&lt;br&gt;
+xmlOperObject.Each();   //loop xmlOperObject[];&lt;br&gt;
+xmlOperObject.Text();  //get text;&lt;br&gt;
+xmlOperObject.Text("abc"); //set text;&lt;br&gt;
+xmlOperObject.Xml();   //get innerXML;&lt;br&gt;
+xmlOperObject.Xml("&lt;a&gt;abc&lt;/a&gt;");   //set innerXML;&lt;br&gt;
+xmlOperObject.CDATA("&lt;a&gt;abc&lt;/a&gt;");  //set as CDATA; like &lt;root&gt;&lt;![CDATA[&lt;a&gt;abc&lt;/a&gt;]]&gt;&gt;&lt;/root&gt;&lt;br&gt;
+xmlOperObject.inerertBefore(existsXmlOperObject);&lt;br&gt;
+xmlOperObject.InsertAfter(existsXmlOperObject);&lt;br&gt;
+xmlOperObject.Append(newXmlOperObject);&lt;br&gt;
+xmlOperObject.AppendTo(newXmlOperObject);&lt;br&gt;
+xmlOperObject.Replace(anotherXmlOperObject);  &lt;br&gt;
+xmlOperObject.Clone();&lt;br&gt;
+xmlOperObject.Remove();&lt;br&gt;
+xmlOperObject.Childrens();&lt;br&gt;
+xmlOperObject.RemoveAttr("attrName");&lt;br&gt;
+xmlOperObject.Attr("attrName");  //get attr;&lt;br&gt;
+xmlOperObject.Attr("attrName", value);  //set attr;&lt;br&gt;
+xmlOperObject.Parent();&lt;br&gt;
+xmlOperObject.First();&lt;br&gt;
+xmlOperObject.Last();&lt;br&gt;
+xmlOperObject.Skip(3);&lt;br&gt;
+xmlOperObject.Between(2,5);&lt;br&gt;
+xmlOperObject.Top(3);&lt;br&gt;
+xmlOperObject.Save(filepath); //Save outerXML to file;
+
+
