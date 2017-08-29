@@ -15,11 +15,11 @@ var result2 = xmlfile1.Find("//NodeName").Xml();  //get Node Xml
 
 xmlfile1.Find("//NodeName").CDATA("&lt;test content&gt;&lt;&gt;");  //set Node CDATA Value
   
-  var rootNode = x("root");   //Make a <root></root> Node
+  var rootNode = x("root");   //Make a &lt;root&gt;&lt;/root&gt; Node
   
-  x("root/item");             //Make a tree node <root><item /></root>
+  x("root/item");             //Make a tree node &lt;root&gt;&lt;item /&gt;&lt;/root&gt;
   
-  x("root").Append(x("item")); //Make a tree node <root><item /></root>
+  x("root").Append(x("item")); //Make a tree node &lt;root&gt;&lt;item /></root>
   
   x("root").Append(x("item").Text("TestValue")); //Make a tree node <root><item>TestValue</item></root>
   
