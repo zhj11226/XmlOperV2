@@ -28,3 +28,8 @@ xmlfile1.Find("//NodeName").CDATA("&lt;test content&gt;&lt;&gt;");  //set Node C
   x("root").Append(x("item").Text("张静")).Find("//item").Replace(x("Item").Text("张静"));  //Replace Node.<br>
   
   
+Some advanced method:<br>
+x("&lt;root&gt;&lt;item&gt;张静&lt;/item&gt;&lt;item&gt;张桢炫&lt;/item&gt;&lt;/root&gt;").Find("//item").Each(delegate(o) {
+  Console.WriteLine(o.Text());
+  return true;
+});
