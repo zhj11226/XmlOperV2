@@ -3,28 +3,28 @@ It's sample use like JQuery.
 You just need add a line 'XmlOperV2.LoadHandle x = ((o) =&gt; { return XmlOperV2.load(o); });' in your own class.
 and now you can use it.
 
-eg:&lt;br /&gt; 
-var xmlfile1 = x("filepath....");
-xmlfile1.Find("//NodeName").Text("abc");    //change Node Text
+eg:<br>
+var xmlfile1 = x("filepath....");<br>
+xmlfile1.Find("//NodeName").Text("abc");    //change Node Text<br>
 
-xmlfile1.Find("//NodeName").Xml("abc");     //change Node Xml
+xmlfile1.Find("//NodeName").Xml("abc");     //change Node Xml<br>
 
-var result1 = xmlfile1.Find("//NodeName").Text(); //get Node Text
+var result1 = xmlfile1.Find("//NodeName").Text(); //get Node Text<br>
 
-var result2 = xmlfile1.Find("//NodeName").Xml();  //get Node Xml
+var result2 = xmlfile1.Find("//NodeName").Xml();  //get Node Xml<br>
 
-xmlfile1.Find("//NodeName").CDATA("&lt;test content&gt;&lt;&gt;");  //set Node CDATA Value
+xmlfile1.Find("//NodeName").CDATA("&lt;test content&gt;&lt;&gt;");  //set Node CDATA Value<br>
   
-  var rootNode = x("root");   //Make a &lt;root&gt;&lt;/root&gt; Node
+  var rootNode = x("root");   //Make a &lt;root&gt;&lt;/root&gt; Node<br>
   
-  x("root/item");             //Make a tree node &lt;root&gt;&lt;item /&gt;&lt;/root&gt;
+  x("root/item");             //Make a tree node &lt;root&gt;&lt;item /&gt;&lt;/root&gt;<br>
   
-  x("root").Append(x("item")); //Make a tree node &lt;root&gt;&lt;item /&gt;&lt;/root&gt;
+  x("root").Append(x("item")); //Make a tree node &lt;root&gt;&lt;item /&gt;&lt;/root&gt;<br>
   
-  x("root").Append(x("item").Text("TestValue")); //Make a tree node &lt;root&gt;&lt;item&gt;TestValue&lt;/item&gt;&lt;/root&gt;
+  x("root").Append(x("item").Text("TestValue")); //Make a tree node &lt;root&gt;&lt;item&gt;TestValue&lt;/item&gt;&lt;/root&gt;<br>
   
-  x("&lt;root xmlns:a=\"test.com\"&gt;&lt;a:item&gt;testValue&lt;/a:item&gt;&lt;/root&gt;").Find("//a:item").Text();  //get Namespace Node Text.
+  x("&lt;root xmlns:a=\"test.com\"&gt;&lt;a:item&gt;testValue&lt;/a:item&gt;&lt;/root&gt;").Find("//a:item").Text();  //get Namespace Node Text.<br>
   
-  x("root").Append(x("item").Text("张静")).Find("//item").Replace(x("Item").Text("张静"));  //Replace Node.
+  x("root").Append(x("item").Text("张静")).Find("//item").Replace(x("Item").Text("张静"));  //Replace Node.<br>
   
   
