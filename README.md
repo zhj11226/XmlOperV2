@@ -33,3 +33,5 @@ x("&lt;root&gt;&lt;item&gt;张静&lt;/item&gt;&lt;item&gt;张桢炫&lt;/item&gt;
   Console.WriteLine(o.Text());<br>
   return true;<br>
 });<br>
+
+x("&lt;root&gt;&lt;item&gt;张青&lt;/item&gt;&lt;item&gt;张桢炫&lt;/item&gt;&lt;/root&gt;").Find("//item").Eq(0).Text("张静");
