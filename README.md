@@ -46,7 +46,7 @@ xmlOperObject.CDATA("&lt;a&gt;abc&lt;/a&gt;");  //set as CDATA; like &lt;root&gt
 xmlOperObject.inerertBefore(existsXmlOperObject);<br />
 xmlOperObject.InsertAfter(existsXmlOperObject);<br />
 xmlOperObject.Append(newXmlOperObject);<br />
-xmlOperObject.AppendTo(newXmlOperObject);<br />
+newXmlOperObject.AppendTo(xmlOperObject);<br />
 xmlOperObject.Replace(anotherXmlOperObject);  <br />
 xmlOperObject.Clone();<br />
 xmlOperObject.Remove();<br />
